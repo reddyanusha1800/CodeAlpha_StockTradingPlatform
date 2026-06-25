@@ -186,6 +186,7 @@ public class StockTradingSystem {
 
         System.out.println(
                 "\nHoldings:");
+        double totalvalue = 0;
 
         for (Map.Entry<String, Integer> entry :
                 user.getPortfolio()
@@ -196,7 +197,19 @@ public class StockTradingSystem {
                     entry.getKey()
                             + " -> "
                             + entry.getValue());
+
+                Stock stock =
+                        findStock(entry.getKey());
+                if (stock != null) {
+                    totalvalue +=
+                            stock.getPrice() * entry.getValue();
         }
+}
+
+        System.out.println(
+                "\nTotal Portfolio Value: ₹" + totalvalue);
+        System.out.println(
+                "Net Worth: ₹" + (user.getBalance() + totalvalue));
 
         System.out.println(
                 "\nTransactions:");
