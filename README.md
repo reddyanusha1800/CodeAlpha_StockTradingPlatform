@@ -1,3 +1,9 @@
+
+
+https://github.com/user-attachments/assets/399e4982-f087-49e1-b71e-f32637e441e3
+
+
+
 # CodeAlpha Stock Trading Platform
 
 ## Overview
@@ -40,6 +46,11 @@ This project simulates a stock trading environment where users can:
 ✔ Transaction History
 
 ✔ File Persistence
+
+
+#### Project Demo Video
+
+https://drive.google.com/file/d/1AARvE_eRwXCJ7_pPNA7MWbftkS7S8fXq/view?usp=sharing
 
 ## Author
 
